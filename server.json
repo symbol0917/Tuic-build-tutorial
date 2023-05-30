@@ -1,7 +1,7 @@
 {
     "server": "[::]:443",
     // UUID可执行cat /proc/sys/kernel/random/uuid生成
-	  //Password可执行openssl rand -base64 32生成
+    //Password可执行openssl rand -base64 32生成
     "users": {
         "UUID": "Password"
     },    
