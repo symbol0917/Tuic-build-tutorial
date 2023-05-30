@@ -5,8 +5,8 @@
     "users": {
         "UUID": "Password"
     },    
-    "certificate": "/etc/tuic/cert.crt",  // 证书文件路径，绝对路径   
-    "private_key": "/etc/tuic/private.key",  // 私钥文件的路径，绝对路径   
+    "certificate": "/etc/ssl/private/cert.crt",  // 证书文件路径，绝对路径   
+    "private_key": "/etc/ssl/private/private.key",  // 私钥文件的路径，绝对路径   
     "congestion_control": "bbr",  // 拥塞控制算法，可用选项："cubic", "new_reno", "bbr"
     "alpn": ["h3"],
     "log_level": "warn"
