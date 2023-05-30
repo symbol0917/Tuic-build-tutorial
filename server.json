@@ -1,13 +1,11 @@
 {
     "server": "[::]:443",
-    // UUID可执行cat /proc/sys/kernel/random/uuid生成
-    //Password可执行openssl rand -base64 32生成
     "users": {
         "UUID": "Password"
     },    
-    "certificate": "/etc/ssl/private/cert.crt",  // 证书文件路径，绝对路径   
-    "private_key": "/etc/ssl/private/private.key",  // 私钥文件的路径，绝对路径   
-    "congestion_control": "bbr",  // 拥塞控制算法，可用选项："cubic", "new_reno", "bbr"
+    "certificate": "/etc/ssl/private/cert.crt",     
+    "private_key": "/etc/ssl/private/private.key",     
+    "congestion_control": "bbr",  
     "alpn": ["h3"],
     "log_level": "warn"
 }
