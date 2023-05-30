@@ -1,6 +1,6 @@
 - 安装acme.sh
 
-````
+```
 curl https://get.acme.sh | sh
 ```
 
