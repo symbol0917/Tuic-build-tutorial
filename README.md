@@ -14,10 +14,12 @@ wget -O /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/tui
 ```
 wget -P /usr/local/etc https://github.com/TinrLin/Tuic-build-tutorial/blob/main/server.json
 ```
-- **下载开机自启文件**
+- **配置开机自启**
 
 ```
-
+wget -P /etc/systemd/system https://github.com/TinrLin/Tuic-build-tutorial/blob/main/tuic.service && systemctl daemon-reload
+```
+- **
 
 
 
