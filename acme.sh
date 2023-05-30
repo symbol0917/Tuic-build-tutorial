@@ -1,8 +1,8 @@
 - 安装acme.sh
 
-```
+`
 curl https://get.acme.sh | sh
-```
+`
 
 - 创建一个bash的alias，方便你的使用
 
