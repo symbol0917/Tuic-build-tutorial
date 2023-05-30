@@ -1,0 +1,14 @@
+{
+    "relay": {
+        "server": "example.com:443",  //example.com替换为你的域名
+        "uuid": "UUID",  //你的uuid
+        "password": "Password",    //你的密码
+        "ip": "000.000.000.000",   //你的VPS的IP
+        "congestion_control": "bbr",
+        "alpn": ["h3"]
+    },
+    "local": {
+        "server": "127.0.0.1:1080"
+    },
+    "log_level": "warn"
+}
