@@ -47,13 +47,12 @@ acme.sh --issue -d www.example.com --standalone -k ec-256 --webroot /home/wwwroo
 acme.sh --install-cert -d g.losem1.tk --ecc --key-file /etc/ssl/private/private.key --fullchain-file /etc/ssl/private/cert.crt
 ```
 - **修改配置文件**
-  *修改UUID*
 
+1.修改UUID*
 ```
 cat /proc/sys/kernel/random/uuid
 ```
-  *修改Passeord*
-
+2.修改Passeord
 ```
 openssl rand -base64 32
 ```
