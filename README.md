@@ -17,7 +17,7 @@ wget -P /usr/local/etc https://raw.githubusercontent.com/TinrLin/Tuic-build-tuto
 - **配置开机自启**
 
 ```
-wget -P /etc/systemd/system https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/blob/main/tuic.service && systemctl daemon-reload
+wget -P /etc/systemd/system https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/tuic.service && systemctl daemon-reload
 ```
 - **配置证书**
 
