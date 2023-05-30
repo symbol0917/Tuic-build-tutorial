@@ -63,7 +63,7 @@ systemctl enable --now tuic.service && systemctl status tuic.service
 ```
 - **V2rayN客户端配置**
 
- 下载[tuic-client](https://github.com/EAimTY/tuic/releases/download/tuic-client-1.0.0-alpha1/tuic-client-1.0.0-alpha1-x86_64-pc-windows-gnu.exe)并将文件名改为tuic-client.exe,复制到V2rayN\bin\tuic目录
+  下载[Tuic内核](https://github.com/EAimTY/tuic/releases/download/tuic-client-1.0.0-alpha1/tuic-client-1.0.0-alpha1-x86_64-pc-windows-gnu.exe)文件并将文件名改为tuic-client.exe,复制到V2rayN\bin\tuic目录
   
 
 
