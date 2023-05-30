@@ -20,6 +20,7 @@ wget -P /usr/local/etc https://github.com/TinrLin/Tuic-build-tutorial/blob/main/
 wget -P /etc/systemd/system https://github.com/TinrLin/Tuic-build-tutorial/blob/main/tuic.service && systemctl daemon-reload
 ```
 - **配置证书**
+
 *安装acme.sh*
 
 ```
