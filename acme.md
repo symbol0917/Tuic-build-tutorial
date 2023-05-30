@@ -1,4 +1,4 @@
-<h6>**安装acme.sh**<h6>
+- **安装acme.sh**
 
 ```
 curl https://get.acme.sh | sh
