@@ -12,7 +12,7 @@ wget -O /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/tui
 - **下载配置文件**
 
 ```
-wget -P /usr/local/etc https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/blob/main/server.json
+wget -P /usr/local/etc https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/server.json
 ```
 - **配置开机自启**
 
