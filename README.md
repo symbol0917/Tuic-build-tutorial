@@ -48,7 +48,7 @@ acme.sh --install-cert -d g.losem1.tk --ecc --key-file /etc/ssl/private/private.
 ```
 - **修改配置文件**
 
-1.修改UUID*
+1.修改UUID
 ```
 cat /proc/sys/kernel/random/uuid
 ```
@@ -61,5 +61,8 @@ openssl rand -base64 32
 ```
 systemctl enable --now tuic.service && systemctl status tuic.service
 ```
+- **下载Tuic客户端内核程序**
+
+[tuic-client](https://github.com/EAimTY/tuic/releases/download/tuic-client-1.0.0-alpha1/tuic-client-1.0.0-alpha1-x86_64-pc-windows-gnu.exe)
 
 
