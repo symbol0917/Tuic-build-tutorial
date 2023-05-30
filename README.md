@@ -26,14 +26,12 @@ wget -P /etc/systemd/system https://github.com/TinrLin/Tuic-build-tutorial/blob/
 ```
 curl https://get.acme.sh | sh
 ```
-
-    *创建 acme.sh 的别名*
+  *创建 acme.sh 的别名*
 
 ```
 alias acme.sh=~/.acme.sh/acme.sh
 ```
-
-  *自动更新acme.sh*
+*自动更新acme.sh*
 
 ```
 acme.sh --upgrade --auto-upgrade
