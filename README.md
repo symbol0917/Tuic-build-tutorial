@@ -57,7 +57,7 @@ systemctl daemon-reload && systemctl enable --now tuic.service && systemctl stat
 
 1.下载[Tuic内核](https://github.com/EAimTY/tuic/releases/download/tuic-client-1.0.0-alpha1/tuic-client-1.0.0-alpha1-x86_64-pc-windows-gnu.exe)文件并将文件名改为tuic-client.exe,复制到V2rayN\bin\tuic目录
 
-2.下载[client.json]文件→里面的信息修改为你自己的→打开V2rayN→服务器→添加自定义服务器→导入修改好的client.json文件
+2.下载**client.json**文件→里面的信息修改为你自己的→打开V2rayN→服务器→添加自定义服务器→导入修改好的client.json文件
   
 
 
