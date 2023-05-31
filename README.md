@@ -12,7 +12,7 @@ wget -O /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/tui
 - **下载配置文件**
 
 ```
-wget -P /usr/local/etc https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/server.json
+wget -O /usr/local/etc/config.json https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/server.json
 ```
 - **配置开机自启**
 
@@ -34,7 +34,7 @@ alias acme.sh=~/.acme.sh/acme.sh
 ```
 acme.sh --upgrade --auto-upgrade
 ```
-4.切换CA机构
+4.设置默认CA
 ```
 acme.sh --set-default-ca --server letsencrypt
 ```
@@ -42,9 +42,9 @@ acme.sh --set-default-ca --server letsencrypt
 ```
 acme.sh --issue -d www.example.com --standalone -k ec-256 --webroot /home/wwwroot/html
 ```
-6.安装证书
+6.安装证书（www.example.com替换为你的域名）
 ```
-acme.sh --install-cert -d g.losem1.tk --ecc --key-file /etc/ssl/private/private.key --fullchain-file /etc/ssl/private/cert.crt
+acme.sh --install-cert -d www.example.com --ecc --key-file /etc/ssl/private/private.key --fullchain-file /etc/ssl/private/cert.crt
 ```
 - **修改配置文件**
 
@@ -59,7 +59,7 @@ openssl rand -base64 32
 - **启动并查看启动状态**
 
 ```
-systemctl enable --now tuic.service && systemctl status tuic.service
+systemctl daemon-reload && systemctl enable --now tuic.service && systemctl status tuic.service
 ```
 - **V2rayN客户端配置**
 
