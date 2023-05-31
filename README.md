@@ -1,4 +1,4 @@
-# [Tuic](https://github.com/EAimTY/tuic)搭建教程
+# [Tuic](https://github.com/EAimTY/tuic)
 - **安装Tuic程序**
 ```
 apt -y update && apt -y install wget socat && wget -O /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/tuic-server-1.0.0-alpha1/tuic-server-1.0.0-alpha1-x86_64-unknown-linux-gnu && chmod +x /usr/local/bin/tuic
