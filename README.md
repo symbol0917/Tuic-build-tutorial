@@ -1,30 +1,18 @@
 # [Tuic](https://github.com/EAimTY/tuic)搭建教程
-- **更新软件源及安装组件**
-
-```
-apt -y update && apt -y install wget socat 
-```
 - **安装Tuic程序**
-
 ```
 apt -y update && apt -y install wget socat && wget -O /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/tuic-server-1.0.0-alpha1/tuic-server-1.0.0-alpha1-x86_64-unknown-linux-gnu && chmod +x /usr/local/bin/tuic
 ```
 - **下载配置文件**
-
 ```
-wget -O /usr/local/etc/config.json https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/server.json
-```
-- **配置开机自启**
-
-```
-wget -P /etc/systemd/system https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/tuic.service && systemctl daemon-reload
+wget -O /usr/local/etc/config.json https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/server.json && wget -P /etc/systemd/system https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/tuic.service
 ```
 - **配置证书**
 
 1.安装acme.sh
 
 ```
-curl https://get.acme.sh | sh
+curl https://get.acme.sh | sh && alias acme.sh=~/.acme.sh/acme.sh && acme.sh --upgrade --auto-upgrade && acme.sh --set-default-ca --server letsencrypt
 ```
 2.创建 acme.sh 的别名
 ```
