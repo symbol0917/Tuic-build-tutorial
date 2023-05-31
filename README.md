@@ -1,7 +1,7 @@
 # [Tuic](https://github.com/EAimTY/tuic)
 - **安装Tuic程序**
 ```
-apt -y update && apt -y install wget socat && wget -O /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/tuic-server-1.0.0-alpha1/tuic-server-1.0.0-alpha1-x86_64-unknown-linux-gnu && chmod +x /usr/local/bin/tuic
+apt -y update && apt -y install wget socat && wget -O /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/0.8.5/tuic-server-0.8.5-x86_64-linux-gnu && chmod +x /usr/local/bin/tuic
 ```
 - **下载配置文件**
 ```
@@ -40,11 +40,7 @@ acme.sh --install-cert -d www.example.com --ecc --key-file /etc/ssl/private/priv
 ```
 - **修改配置文件**
 
-1.生成UUID
-```
-cat /proc/sys/kernel/random/uuid
-```
-2.生成Passeord
+生成Passeord
 ```
 openssl rand -base64 32
 ```
@@ -53,11 +49,7 @@ openssl rand -base64 32
 ```
 systemctl daemon-reload && systemctl enable --now tuic.service && systemctl status tuic.service
 ```
-- **配置V2rayN客户端**
 
-1.下载[Tuic内核](https://github.com/EAimTY/tuic/releases/download/tuic-client-1.0.0-alpha1/tuic-client-1.0.0-alpha1-x86_64-pc-windows-gnu.exe)文件并将文件名改为tuic-client.exe,复制到V2rayN\bin\tuic目录
-
-2.下载**client.json**文件→修改配置信息（删掉中文说明）→打开V2rayN→服务器→添加自定义服务器→导入修改好的client.json文件
   
 
 
