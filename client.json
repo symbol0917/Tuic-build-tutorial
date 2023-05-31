@@ -3,7 +3,7 @@
         "server": "www.example.com:443",  //example.com替换为你的域名
         "uuid": "UUID",  //你的uuid
         "password": "Password",    //你的密码
-        ip": "000.000.000.000",   //你的VPS的IP
+        "ip": "000.000.000.000",   //你的VPS的IP
         "congestion_control": "bbr",
         "alpn": ["h3", "spdy/3.1"],
         "zero_rtt_handshake": false,
