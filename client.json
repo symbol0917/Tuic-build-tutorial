@@ -1,6 +1,6 @@
 {
     "relay": {
-        "server": "example.com:443",  //example.com替换为你的域名
+        "server": "www.example.com:443",  //example.com替换为你的域名
         "uuid": "UUID",  //你的uuid
         "password": "Password",    //你的密码
         "ip": "000.000.000.000",   //你的VPS的IP
