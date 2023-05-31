@@ -5,14 +5,18 @@ apt -y update && apt -y install wget socat && wget -O /usr/local/bin/tuic https:
 ```
 - **下载配置文件**
 ```
-wget -O /usr/local/etc/config.json https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/server.json && wget -P /etc/systemd/system https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/tuic.service
+wget -O /usr/local/etc/config.json https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/server.json
+```
+- **配置开机自启**
+```
+wget -P /etc/systemd/system https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/tuic.service
 ```
 - **配置证书**
 
 1.安装acme.sh
 
 ```
-curl https://get.acme.sh | sh && alias acme.sh=~/.acme.sh/acme.sh && acme.sh --upgrade --auto-upgrade && acme.sh --set-default-ca --server letsencrypt
+curl https://get.acme.sh | sh 
 ```
 2.创建 acme.sh 的别名
 ```
@@ -36,15 +40,15 @@ acme.sh --install-cert -d www.example.com --ecc --key-file /etc/ssl/private/priv
 ```
 - **修改配置文件**
 
-1.修改UUID
+1.生成UUID
 ```
 cat /proc/sys/kernel/random/uuid
 ```
-2.修改Passeord
+2.生成Passeord
 ```
 openssl rand -base64 32
 ```
-- **启动并查看启动状态**
+- **查看Tuic运行状态**
 
 ```
 systemctl daemon-reload && systemctl enable --now tuic.service && systemctl status tuic.service
