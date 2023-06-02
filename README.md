@@ -10,31 +10,12 @@ wget -O /usr/local/etc/config.json https://raw.githubusercontent.com/TinrLin/Tui
 
 - **配置证书**
 
-1.安装acme.sh
+**www.example.com替换为你的域名**
 
 ```
-curl https://get.acme.sh | sh 
+curl https://get.acme.sh | sh && alias acme.sh=~/.acme.sh/acme.sh && acme.sh --upgrade --auto-upgrade && acme.sh --set-default-ca --server letsencrypt && acme.sh --issue -d www.example.com --standalone -k ec-256 --webroot /home/wwwroot/html && acme.sh --install-cert -d www.example.com --ecc --key-file /etc/ssl/private/private.key --fullchain-file /etc/ssl/private/cert.crt 
 ```
-2.创建 acme.sh 的别名
-```
-alias acme.sh=~/.acme.sh/acme.sh
-```
-3.自动更新acme.sh
-```
-acme.sh --upgrade --auto-upgrade
-```
-4.设置默认CA
-```
-acme.sh --set-default-ca --server letsencrypt
-```
-5.生成证书（www.example.com替换为你的域名）
-```
-acme.sh --issue -d www.example.com --standalone -k ec-256 --webroot /home/wwwroot/html
-```
-6.安装证书（www.example.com替换为你的域名）
-```
-acme.sh --install-cert -d www.example.com --ecc --key-file /etc/ssl/private/private.key --fullchain-file /etc/ssl/private/cert.crt
-```
+
 - **修改配置文件**
 
 生成UUID
