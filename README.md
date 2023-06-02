@@ -5,12 +5,9 @@ apt -y update && apt -y install wget socat uuid-runtime && wget -O /usr/local/bi
 ```
 - **下载配置文件**
 ```
-wget -O /usr/local/etc/config.json https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/server.json
+wget -O /usr/local/etc/config.json https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/server.json && wget -P /etc/systemd/system https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/tuic.service
 ```
-- **配置开机自启**
-```
-wget -P /etc/systemd/system https://raw.githubusercontent.com/TinrLin/Tuic-build-tutorial/main/tuic.service
-```
+
 - **配置证书**
 
 1.安装acme.sh
