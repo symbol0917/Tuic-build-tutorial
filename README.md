@@ -33,6 +33,6 @@ systemctl daemon-reload && systemctl enable --now tuic.service && systemctl stat
 ```
 - **Download the Tuic kernel**
 
-[Tuic kernel](https://github.com/EAimTY/tuic](https://github.com/EAimTY/tuic/releases/download/tuic-client-1.0.0-beta0/tuic-client-1.0.0-beta0-x86_64-pc-windows-gnu.exe) 
+[Tuic kernel](https://github.com/EAimTY/tuic/releases/download/tuic-client-1.0.0-beta0/tuic-client-1.0.0-beta0-x86_64-pc-windows-gnu.exe) 
 
 
