@@ -10,7 +10,7 @@ wget -O /usr/local/etc/config.json https://raw.githubusercontent.com/TinrLin/Tui
 
 - **配置证书**
 
-**www.example.com替换为你的域名**
+**注：www.example.com替换为你的域名**
 
 ```
 curl https://get.acme.sh | sh && alias acme.sh=~/.acme.sh/acme.sh && acme.sh --upgrade --auto-upgrade && acme.sh --set-default-ca --server letsencrypt && acme.sh --issue -d www.example.com --standalone -k ec-256 --webroot /home/wwwroot/html && acme.sh --install-cert -d www.example.com --ecc --key-file /etc/ssl/private/private.key --fullchain-file /etc/ssl/private/cert.crt 
