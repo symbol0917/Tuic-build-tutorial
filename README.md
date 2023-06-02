@@ -1,7 +1,7 @@
 # [Tuic](https://github.com/EAimTY/tuic)
 - **安装Tuic程序**
 ```
-apt -y update && apt -y install wget socat && wget -O /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/0.8.5/tuic-server-0.8.5-x86_64-linux-gnu && chmod +x /usr/local/bin/tuic
+apt -y update && apt -y install wget socat && wget -O /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/tuic-server-1.0.0-beta0/tuic-server-1.0.0-beta0-x86_64-unknown-linux-gnu && chmod +x /usr/local/bin/tuic
 ```
 - **下载配置文件**
 ```
