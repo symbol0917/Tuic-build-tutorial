@@ -1,7 +1,7 @@
 # [Tuic](https://github.com/EAimTY/tuic)
 - **安装Tuic程序**
 ```
-apt -y update && apt -y install wget socat && wget -O /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/tuic-server-1.0.0-beta0/tuic-server-1.0.0-beta0-x86_64-unknown-linux-gnu && chmod +x /usr/local/bin/tuic
+apt -y update && apt -y install wget socat uuid-runtime && wget -O /usr/local/bin/tuic https://github.com/EAimTY/tuic/releases/download/tuic-server-1.0.0-beta0/tuic-server-1.0.0-beta0-x86_64-unknown-linux-gnu && chmod +x /usr/local/bin/tuic
 ```
 - **下载配置文件**
 ```
@@ -40,6 +40,10 @@ acme.sh --install-cert -d www.example.com --ecc --key-file /etc/ssl/private/priv
 ```
 - **修改配置文件**
 
+生成UUID
+```
+uuidgen
+```
 生成Passeord
 ```
 openssl rand -base64 32
