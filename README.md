@@ -13,7 +13,7 @@ wget -O /usr/local/etc/config.json https://raw.githubusercontent.com/TinrLin/Tui
 **Note: replace www.example.com with your domain name**
 
 ```
-curl https://get.acme.sh | sh && alias acme.sh=~/.acme.sh/acme.sh && acme.sh --upgrade --auto-upgrade && acme.sh --set-default-ca --server letsencrypt && acme.sh --issue -d www.example.com --standalone -k ec-256 --webroot /home/wwwroot/html && acme.sh --install-cert -d www.example.com --ecc --key-file /etc/ssl/private/private.key --fullchain-file /etc/ssl/private/cert.crt 
+curl https://get.acme.sh | sh && sleep 0.5 && alias acme.sh=~/.acme.sh/acme.sh && sleep 0.5 && acme.sh --upgrade --auto-upgrade && sleep 0.5 && acme.sh --set-default-ca --server letsencrypt && sleep 0.5 && acme.sh --issue -d www.example.com --standalone -k ec-256 --webroot /home/wwwroot/html && sleep 0.5 && acme.sh --install-cert -d www.example.com --ecc --key-file /etc/ssl/private/private.key --fullchain-file /etc/ssl/private/cert.crt 
 ```
 
 - **Modify the configuration file**
